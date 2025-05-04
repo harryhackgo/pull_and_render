@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.users,
+.skeleton,
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skeleton__item,
+.card {
+  width: 300px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+.skeleton__img,
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.skeleton__img {
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.skeleton__line {
+  width: 80%;
+  height: 22px;
+  background: #ddd;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.skeleton__line:last-child {
+  width: 60%;
+}
+.skeleton__animation {
+  background: linear-gradient(90deg, #eee, #d1d0d0, #eee);
+  background-size: 200%;
+  animation: skeleton 1.3s linear infinite;
+}
+
+@keyframes skeleton {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.title {
+  color: dodgerblue;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: dodgerblue;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 12px;
+}
